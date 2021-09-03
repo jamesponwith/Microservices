@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+
+  accounts:
+    image: drspeedracer/accounts:latest
+    mem_limit: 700m
+    ports:
+      - "8080:8080"
+    networks:
+      - drspeedbank-network
+    
+  loans:
+    image: drspeedracer/loans:latest
+    mem_limit: 700m
+    ports:
+      - "8090:8090"
+    networks:
+      - drspeedbank-network
+    
+  cards:
+    image: drspeedracer/cards:latest
+    mem_limit: 700m
+    ports:
+      - "9000:9000"
+    networks:
+      - drspeedbank-network
+    
+networks:
+  drspeedbank-network:
