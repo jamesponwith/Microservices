@@ -34,7 +34,7 @@ import io.github.resilience4j.retry.annotation.Retry;
 import io.micrometer.core.annotation.Timed;
 
 /**
- * @author Eazy Bytes
+ * @author DrSpeedRacer
  *
  */
 
@@ -109,11 +109,11 @@ public class AccountsController {
 	@GetMapping("/sayHello")
 	@RateLimiter(name = "sayHello", fallbackMethod = "sayHelloFallback")
 	public String sayHello() {
-		return "Hello, Welcome to EazyBank Kubernetes cluster";
+		return "Hello, Welcome to DrSpeedBank Kubernetes cluster";
 	}
 
 	private String sayHelloFallback(Throwable t) {
-		return "Hi, Welcome to EazyBank";
+		return "Hi, Welcome to DrSpeedBank";
 	}
 
 }

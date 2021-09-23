@@ -10,7 +10,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 /**
- * @author EazyBytes
+ * @author Drspeedracer
  *
  */
 @Getter

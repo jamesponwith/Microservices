@@ -14,7 +14,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 /**
- * @author Eazy Bytes
+ * @author DrSpeedRacer
  *
  */
 @Configuration
